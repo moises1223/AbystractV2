@@ -148,6 +148,19 @@
         overflow-x: hidden !important;
         height: 100%;
     }
+    .header-content {
+        
+    
+        .background-section {
+    
+            
+    
+            video {
+                object-position: 40% center;
+
+            }
+        }
+    }
     .nav-block {
         top: 0px;
         display: flex;
