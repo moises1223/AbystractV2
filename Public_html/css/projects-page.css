@@ -1,0 +1,190 @@
+@import url('variables.css');
+@import url('header-section.css');
+
+
+.projects-page {
+    background-image: url('../img/elemento-project.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-margin-top: calc(var(--h-header) + -1em);
+    position: relative;
+    background-color: var(--preto);
+    top: -490px;
+    height: 120vh;
+}
+
+
+.bento-grid-container {
+    padding: 60px 180px;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 5rem;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    .title {
+        h1 {
+
+            text-align: center;
+            color: var(--branco);
+            margin-bottom: 5rem;
+            font-weight: 500;
+            font-size: 42px;
+        }
+
+        span {
+            font-weight: 600;
+        }
+    }
+
+    .bento-grid {
+        display: grid;
+        grid-template-columns: repeat(11, 1fr);
+        grid-template-rows: auto auto;
+        gap: 15px;
+
+        .bento-item {
+            background-color: #2a2a2a;
+            border-radius: 30px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transform: scale(1);
+            transition: transform 0.5s, background-color 0.5s, color 0.5s;
+
+            &:hover {
+                transform: scale(0.97);
+
+                .arrow-border{
+                    background-color: var(--preto);
+                        
+                }
+
+            }
+
+            .img-container {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                min-height: 160px;
+                overflow: hidden;
+
+
+                img {
+
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+
+                }
+            }
+
+            .arrow-border {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                backdrop-filter: blur(10px);
+                background: rgba(0, 0, 0, 0.2);
+                -webkit-backdrop-filter: blur(10px);
+                .arrow{
+                    color: white;
+                    font-size: 30px;
+                    transform: rotate(-45deg);
+                }
+            }
+
+            h3 {
+                padding: 20px 25px;
+                color: var(--roxo);
+                background-color: #fff;
+            }
+        }
+
+        .large {
+            grid-row: span 2;
+
+            img {
+                height: calc(100% - 45px);
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+
+
+/* Larguras personalizadas */
+.width-2 {
+    grid-column: span 2;
+}
+
+.width-3 {
+    grid-column: span 3;
+}
+
+.width-4 {
+    grid-column: span 4;
+}
+
+.width-5 {
+    grid-column: span 5;
+}
+
+.width-6 {
+    grid-column: span 6;
+}
+
+@media (max-width: 768px) {
+    .projects-page {
+        top: -700px;
+
+    }
+
+
+
+
+    .projects-page {
+        height: 230vh;
+    }
+
+    .bento-grid-container {
+        padding: 50px 20px;
+
+        .title {
+            h1 {
+
+                font-size: 25px;
+            }
+        }
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item,
+    .bento-item.large,
+    .width-2,
+    .width-3,
+    .width-4,
+    .width-5,
+    .width-6 {
+        grid-column: 1 / -1;
+        /* Ocupa toda a largura em telas menores */
+        grid-row: auto;
+    }
+
+    .bento-item.large .img-container {
+        min-height: 160px;
+    }
+}

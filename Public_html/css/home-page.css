@@ -1,0 +1,180 @@
+@import url('variables.css');
+
+.home-page {
+    position: absolute;
+
+    top: 340px;
+}
+
+.home-page-content {
+    width: 40%;
+
+    h1 {
+        color: var(--branco);
+        font-weight: 600;
+        font-size: 60px;
+        margin-bottom: 2rem;
+
+        span {
+        
+            font-weight: 800;
+            color: var(--preto);
+        }
+    }
+
+
+    .buttons {
+        /* position: absolute;
+        top: 270px; */
+        display: flex;
+        width: 100%;
+        gap: 1rem;
+        flex-wrap: wrap;
+        
+        a {
+            cursor: pointer;
+            
+            .btn-budge {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 40px;
+                font-weight: 600;
+                font-size: 15px;
+                border-radius: 50px;
+                background-color: var(--preto);
+                color: var(--branco);
+                height: 50px;
+                cursor: pointer;
+                transition: transform 0.5s, background-color 0.5s, color 0.5s, width 0.5s ease;
+                white-space: nowrap;
+                overflow: hidden;
+                
+                &:hover {
+                    color: var(--preto);
+                    background-color: var(--branco);
+                    transform: scale(1.05);
+                    
+                    .arrow {
+                        max-width: 30px;
+                        opacity: 1;
+                        margin-left: 10px;
+                    }
+                }
+                
+                .arrow {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 0;
+                    opacity: 0;
+                    overflow: hidden;
+                    transform: rotate(-45deg);
+                    transition: max-width 0.5s ease, opacity 0.5s, margin-left 0.5s;
+                }
+                
+                span {
+                    /* Texto do botão */
+                }
+            }
+        }
+        .btn-contact {
+            cursor: pointer;
+            padding: 0px 40px;
+            font-weight: 600;
+            font-size: 15px;
+            border-radius: 50px;
+            background-color: transparent;
+            border: 1px solid var(--branco);
+            color: var(--branco);
+            height: 50px;
+            width: 100%;
+            transform: scale(1);
+            transition: transform ease 0.5s, background-color 0.5s, color 0.5s;
+
+            &:hover {
+                color: var(--preto);
+                border: 1px solid var(--preto);
+                transform: scale(1.03);
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+
+    .home-page {
+        position: absolute;
+    
+        top: 300px;
+    }
+    
+    .home-page-content {
+        width: 100%;
+    
+        h1 {
+    
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 3rem;
+        }
+   
+    
+        .buttons {
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            .btn-budge{
+                
+                .button-text{
+
+                    font-size: 12px;
+                }
+            }
+            
+            .btn-contact {
+                
+                font-size: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .home-page {
+        position: absolute;
+    
+        top: 30px;
+    }
+    
+    .home-page-content {
+        width: 100%;
+    
+        h1 {
+    
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 3rem;
+        }
+   
+    
+        .buttons {
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+            .btn-budge{
+                
+                .button-text{
+
+                    font-size: 12px;
+                }
+            }
+            
+            .btn-contact {
+                
+                font-size: 12px;
+            }
+        }
+    }
+
+}
+
