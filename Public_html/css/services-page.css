@@ -46,8 +46,8 @@
 @media (max-width: 768px) {
 
     .services-page{
-        top: -700px;
-       height: 100vh;
+        top: -650px;
+       height: 120vh;
        background: linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     }
     
