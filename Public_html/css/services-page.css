@@ -1,6 +1,6 @@
 @import url('variables.css');
 
-.services-page{
+.services-page {
     scroll-margin-top: calc(var(--h-header) + 7.5em);
     position: relative;
     top: -490px;
@@ -9,32 +9,38 @@
     z-index: 0;
 }
 
-.services-page-content{
+.services-page-content {
     display: flex;
-    .block1{
+
+    .block1 {
         width: 50%;
-        .title{
+
+        .title {
 
             color: var(--branco);
             font-size: 60px;
             font-weight: 500;
         }
-        span{
+
+        span {
             font-weight: 600;
         }
     }
-    .block2{
+
+    .block2 {
         width: 50%;
 
-        .service{
+        .service {
             color: var(--branco);
             margin-bottom: 2.5rem;
-            .title{
+
+            .title {
                 font-size: 40px;
                 font-weight: 500;
                 margin-bottom: 2rem;
             }
-            .sub-title{
+
+            .sub-title {
                 font-size: 15px;
                 font-weight: 500;
 
@@ -45,44 +51,50 @@
 
 @media (max-width: 768px) {
 
-    .services-page{
-        top: -650px;
-       height: 120vh;
-       background: linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+    .services-page {
+        top: -600px;
+        height: 120vh;
+        background: linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     }
-    
-    .services-page-content{
+
+    .services-page-content {
+        
         display: flex;
         flex-direction: column;
-       
-        .block1{
+
+        .block1 {
             width: 100%;
             margin-bottom: 3rem;
-            .title{
-                
+
+            .title {
+
                 font-size: 40px;
                 font-weight: 500;
             }
-            span{
+
+            span {
                 font-weight: 600;
             }
         }
-        .block2{
-            
+
+        .block2 {
+
 
             width: 100%;
-    
-            .service{
+
+            .service {
                 margin-bottom: 2.5rem;
-                .title{
+
+                .title {
                     font-size: 25px;
                     font-weight: 500;
                     margin-bottom: 2rem;
                 }
-                .sub-title{
+
+                .sub-title {
                     font-size: 12px;
                     font-weight: 500;
-    
+
                 }
             }
         }
