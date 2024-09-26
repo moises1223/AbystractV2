@@ -103,12 +103,8 @@
 
 @media (max-width: 768px) {
 
-    .home-page {
-        position: absolute;
-    
-        top: 300px;
-    }
-    
+   
+ 
     .home-page-content {
         width: 100%;
     
@@ -147,6 +143,8 @@
     }
     
     .home-page-content {
+        position: absolute;
+        top: 300px;
         width: 100%;
     
         h1 {
