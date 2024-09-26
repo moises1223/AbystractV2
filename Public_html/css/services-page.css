@@ -52,13 +52,13 @@
 @media (max-width: 768px) {
 
     .services-page {
-        top: -600px;
-        height: 120vh;
+        top: -580px;
+        height: 150vh;
         background: linear-gradient(to top, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     }
 
     .services-page-content {
-        
+
         display: flex;
         flex-direction: column;
 
@@ -101,4 +101,13 @@
     }
 
 
+}
+
+@media (max-width: 1024){
+    .services-page-content{
+
+        top: -580px;
+    }
+    
+    
 }
