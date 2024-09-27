@@ -63,12 +63,8 @@ section {
     transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-    html{
-        scroll-behavior: auto;
-        
-    }
 
+@media (max-width: 768px) {
     .container {
         margin: 0 auto;
         /* Centraliza o conteúdo */
@@ -79,10 +75,6 @@ section {
 }
 
 @media (max-width: 1024px) {
-    html{
-        scroll-behavior: auto;
-    }
-
     .container {
         margin: 0 auto;
         /* Centraliza o conteúdo */
@@ -93,10 +85,6 @@ section {
 }
 
 @media (min-width: 1200px) {
-    html{
-        scroll-behavior: auto;
-    }
-    
     .container {
         max-width: 1920px;
     }
