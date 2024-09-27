@@ -24,23 +24,8 @@
         <div class="header-content">
 
             <div class="background-section">
-                <video src="video/treeright19mb.mp4" autoplay loop muted playsinline></video>
-                <script>
-                    document.addEventListener('DOMContentLoaded', function() {
-                      var video = document.querySelector('.background-section video');
-                  
-                      if (video) {
-                        video.muted = true;
-                        video.setAttribute('playsinline', '');
-                        video.setAttribute('autoplay', '');
-                        video.setAttribute('loop', '');
-                        video.play().catch(function(error) {
-                          // Caso não reproduza, lidar com o erro aqui
-                          console.log('Autoplay falhou:', error);
-                        });
-                      }
-                    });
-                  </script>
+                <video src="video/treeright19mb.mp4" autoplay loop muted playsinline poster="img/Fallbackvideo.jpeg"></video>
+               
             </div>
 
             <div class="nav-block">
