@@ -196,7 +196,53 @@
 }
 
 @media (max-width: 1024px){
-    .footer-content {
-        
+    
+}
+
+@media screen and (orientation: landscape) {
+    .footer-content{
+
+        .sentence {
+           
+    
+            .title {
+              
+    
+                h2 {
+                  
+                    font-size: 30px;
+                    
+                }
+            }
+        }
+        .inner-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0px 10px;
+
+            
+
+            .copyrighs {
+                margin-bottom: 2rem;
+            }
+
+            .brand-logo-inner {
+                margin-bottom: 2rem;
+
+                img {
+
+                    height: 40px;
+                }
+            }
+
+            .links-inner {
+                padding: 40px ;
+                .nav-items {
+                    display: flex;
+                    gap: 1rem;
+                }
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 .brands-carroussel {
-    background-color: var(--bracp);
+    background-color: var(--branco);
     height: 15vh;
 }
 
@@ -60,4 +60,13 @@
 .slider::after {
     left: 0;
     background: linear-gradient(to right, #fff 0%, #0000 100%);
+}
+
+@media screen and (orientation: landscape) {
+    .brands-carroussel  {
+        height: 25vh;
+    }
+    .slider{
+        height: 25vh;
+    }
 }

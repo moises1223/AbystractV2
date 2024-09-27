@@ -16,10 +16,12 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
+    top: 200px;
 
     .block1 {
         position: relative;
-        top: 200px;
+
         width: 70%;
 
         .title {
@@ -75,7 +77,7 @@
     .block2 {
         text-align: center;
         position: relative;
-        top: 200px;
+
         margin-left: 5rem;
         height: 550px;
         width: 50%;
@@ -190,31 +192,18 @@
             }
 
             .profile-cards {
-                margin-top: 5rem;
-                display: flex;
-                gap: 2rem;
-                justify-content: center;
 
-                .profile-1 {
-                    margin-right: 0rem
-                }
+
+                .profile-1 {}
 
                 .profile {
-                    display: flex;
-                    flex-direction: column;
+
 
                     .profile-text {
-                        margin-left: 0rem;
-                        .profile-name {
-                            font-weight: 600;
-                            font-size: 14px;
 
-                        }
+                        .profile-name {}
 
-                        .role {
-                            font-weight: 500;
-                            font-size: 12px;
-                        }
+                        .role {}
                     }
                 }
             }
@@ -244,6 +233,63 @@
                     font-size: 12px;
                     font-weight: 300;
 
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .about-page {
+        height: 150vh;
+    }
+}
+
+
+@media screen and (orientation: landscape) {
+    .about-page {
+        height: 250vh;
+    }
+
+    .about-page-content {
+        top: 100px;
+
+        .block1 {
+            .title {
+                font-size: 25px;
+            }
+
+            .sub {
+                font-size: 12px;
+            }
+        }
+
+        .block2 {
+            height: 300px;
+        }
+        .statistics-panel {
+            top: 100px;
+        }
+
+        .profile-cards {
+            width: 100%;
+            margin-top: 5rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            .profile-1 {
+                margin-right: 0rem
+            }
+            .profile {
+                display: flex;
+                flex-direction: column;
+
+                .profile-image {
+                    margin-left: 1rem;
+                }
+
+                .profile-text {
+                    margin-left: 1rem;
                 }
             }
         }

@@ -175,4 +175,23 @@
     }
 
 }
+@media screen and (orientation: landscape) {
+    .home-page-content {
+        top: 120px;
+        h1 {
+            font-size: 20px;
+        }
+        .buttons {
+            .btn-budge{
+                .button-text{
 
+                    font-size: 10px;
+                }
+            }
+            .btn-contact {
+                
+                font-size: 10px;
+            }
+        }
+    }
+}

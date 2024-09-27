@@ -9,7 +9,7 @@
     scroll-margin-top: calc(var(--h-header) + -1em);
     position: relative;
     background-color: var(--preto);
-   
+
     height: 120vh;
 }
 
@@ -44,7 +44,7 @@
         grid-template-rows: auto auto;
         gap: 15px;
 
-        .bento-item {   
+        .bento-item {
             cursor: pointer;
             background-color: #2a2a2a;
             border-radius: 30px;
@@ -57,10 +57,10 @@
             &:hover {
                 transform: scale(0.97);
 
-                .arrow-border{
-                
+                .arrow-border {
+
                     background-color: var(--preto);
-                        
+
                 }
 
             }
@@ -84,7 +84,7 @@
 
                 }
 
-                iframe{
+                iframe {
                     cursor: pointer;
                     width: 100%;
                     height: 100%;
@@ -107,7 +107,8 @@
                 backdrop-filter: blur(10px);
                 background: rgba(0, 0, 0, 0.2);
                 -webkit-backdrop-filter: blur(10px);
-                .arrow{
+
+                .arrow {
                     cursor: pointer;
                     color: white;
                     font-size: 30px;
@@ -158,14 +159,6 @@
 
 @media (max-width: 768px) {
     .projects-page {
-       
-
-    }
-
-
-
-
-    .projects-page {
         height: 225vh;
     }
 
@@ -199,4 +192,43 @@
     .bento-item.large .img-container {
         min-height: 160px;
     }
+}
+
+@media screen and (orientation: landscape) {
+
+    .projects-page {
+        height: 450vh;
+    }
+
+    .bento-grid-container {
+        padding: 50px 150px;
+
+        .title {
+            h1 {
+
+                font-size: 25px;
+            }
+        }
+    }
+
+    .bento-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bento-item,
+    .bento-item.large,
+    .width-2,
+    .width-3,
+    .width-4,
+    .width-5,
+    .width-6 {
+        grid-column: 1 / -1;
+        /* Ocupa toda a largura em telas menores */
+        grid-row: auto;
+    }
+
+    .bento-item.large .img-container {
+        min-height: 160px;
+    }
+
 }
