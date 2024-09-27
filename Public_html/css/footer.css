@@ -150,6 +150,7 @@
             flex-direction: column;
             align-items: center;
             padding: 0px 10px;
+           
 
             .sentence {
                 .title {
@@ -186,6 +187,8 @@
             }
 
             .links-inner {
+                padding: 0px 10px;
+                margin-bottom: 2rem;
                 .nav-items {
                     display: flex;
                     gap: 1rem;
@@ -237,6 +240,8 @@
             }
 
             .links-inner {
+               
+                margin-bottom: 2rem;
                 padding: 40px ;
                 .nav-items {
                     display: flex;
