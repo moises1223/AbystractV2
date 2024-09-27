@@ -3,7 +3,7 @@
 .contact-page {
     scroll-margin-top: calc(var(--h-header) + 4em);
     position: relative;
-    top: -490px;
+   
     height: 75vh;
     background-color: var(--preto);
 }
@@ -110,7 +110,6 @@
 @media (max-width: 768px) {
     .contact-page{
         height: 110vh;
-        top: -700px;
     }
     .contact-page-text{
         width: 100%;

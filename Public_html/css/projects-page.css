@@ -9,7 +9,7 @@
     scroll-margin-top: calc(var(--h-header) + -1em);
     position: relative;
     background-color: var(--preto);
-    top: -490px;
+   
     height: 120vh;
 }
 
@@ -158,7 +158,7 @@
 
 @media (max-width: 768px) {
     .projects-page {
-        top: -700px;
+       
 
     }
 

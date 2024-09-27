@@ -4,8 +4,8 @@
     scroll-margin-top: calc(var(--h-header) + -9rem);
     background-color: var(--preto);
     background: radial-gradient(ellipse 60% 45% at center, #501d68e1, #000);
-    height: 180vh;
-    z-index: 1;
+    height: 120vh;
+    z-index: 10;
 }
 
 .subcontainer-1 {
@@ -161,7 +161,7 @@
 @media (max-width: 768px) {
 
     .about-page {
-        height: 200vh;
+        height: 150vh;
     }
 
     .subcontainer-1 {
