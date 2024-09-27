@@ -4,7 +4,7 @@
     scroll-margin-top: calc(var(--h-header) + 7.5em);
     background-color: var(--preto);
     position: relative;
-    height: 100vh;
+    height: 40vh;
     z-index: 0;
 }
 
@@ -99,7 +99,7 @@
 @media (max-width: 768px) {
 
     .footer {
-        height: 100vh;
+        height: 60vh;
         z-index: 0;
         
     }
@@ -199,7 +199,7 @@
     
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape)  and (max-width: 1024px){
     .footer-content{
 
         .sentence {

@@ -175,7 +175,8 @@
     }
 
 }
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px){
+
     .home-page-content {
         top: 120px;
         h1 {

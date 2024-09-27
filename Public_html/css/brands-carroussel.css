@@ -62,7 +62,7 @@
     background: linear-gradient(to right, #fff 0%, #0000 100%);
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .brands-carroussel  {
         height: 25vh;
     }

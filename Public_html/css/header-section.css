@@ -142,7 +142,7 @@
 }
 
 
-@media (max-width: 915px) {
+@media (max-width: 915px)and (max-width: 1024px) {
 
     .header-content {
         .background-section {    

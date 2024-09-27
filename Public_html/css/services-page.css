@@ -104,8 +104,8 @@
 @media (max-width: 1024){
      
 }
-
-@media screen and (orientation: landscape) {
+ 
+@media screen and (orientation: landscape)  and (max-width: 1024px){
     .services-page {
         height: 260vh;
     }
