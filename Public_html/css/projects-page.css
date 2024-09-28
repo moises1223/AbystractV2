@@ -157,6 +157,12 @@
     grid-column: span 6;
 }
 
+@media(max-width: 1400px){
+    .bento-grid-container {
+        padding: 60px 20px;
+    }
+}
+
 @media (max-width: 768px) {
     .projects-page {
         height: 225vh;

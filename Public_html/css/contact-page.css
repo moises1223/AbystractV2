@@ -131,17 +131,23 @@
         width: 100%;
     }
 
+
+
 }
+
 @media (max-width: 1024px) {
+
+
     
 }
 
 @media screen and (orientation: landscape)and (max-width: 1024px) {
+
     .contact-page{
         height: 190vh;
     }
+
     .contact-page-text{
-        
         .title{
             h2{
 

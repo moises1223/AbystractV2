@@ -47,7 +47,6 @@
 .slider::after {
     position: absolute;
     content: "";
-
     height: 100%;
     width: var(--logo-width);
 }
