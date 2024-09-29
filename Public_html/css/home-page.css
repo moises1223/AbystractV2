@@ -149,7 +149,7 @@
         h1 {
     
             font-weight: 600;
-            font-size: 25px;
+            font-size: 0.3rem;
             margin-bottom: 3rem;
         }
    
@@ -167,7 +167,6 @@
             }
             
             .btn-contact {
-                
                 font-size: 12px;
             }
         }
@@ -193,4 +192,73 @@
             }
         }
     }
+}
+
+/* mobile */
+@media(max-width: 480px){
+    
+
+    .links-inner{
+        
+        .nav-items{
+            width: 100%;
+            display: flex;
+            flex-direction: column;    
+        }
+
+    }
+    
+    .home-page-content{
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+}
+
+/* extra small devices */
+@media(min-width: 481px) and (max-width: 767px){}
+
+/* small tablets */
+@media(min-width: 768px) and (max-width: 991px){
+    
+
+    .home-page-content{
+        h1{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+/* large tablets/laptops */
+@media(min-width: 992px) and (max-width: 1119px){
+    
+
+    .home-page-content{
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+/* desktops */
+@media(min-width: 1200px) and (max-width: 1919px){
+    
+
+    .home-page-content{
+        h1{
+            font-size: 2.5rem;
+        }
+    }
+
+    .leftToRight{
+        span{
+            font-size: 3.5rem;
+        }
+    }
+
+}
+
+/* extra large screens */
+@media(min-width: 1920px){
+    
 }
