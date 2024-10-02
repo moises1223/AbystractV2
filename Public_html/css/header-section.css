@@ -4,11 +4,11 @@
     position: fixed;
     display: flex;
     justify-content: space-between;
-    width:100%;
+    width: 100%;
     top: 40px;
     z-index: 1;
 
-    
+
     .brand-logo {
         padding: 10px 40px;
         cursor: pointer;
@@ -44,17 +44,12 @@
             -webkit-backdrop-filter: blur(10px);
 
             .item {
-                a {
+                a{
+                    color: var(--branco);
                     font-size: 15px;
                     font-weight: 400;
-                    color: var(--branco);
-                    transition: transform ease 0.5s, color 0.5s;
-
-                    &:hover {
-                        color: var(--preto);
-                    }
+                    transition: transform ease 0.5s, color 0.5s ;
                 }
-
             }
         }
 
@@ -90,32 +85,33 @@
 
         /* .social-icons { */
 
-            .border {
-                border-radius: 50%;
-                height: 48px;
-                width: 48px;
+        .border {
+            border-radius: 50%;
+            height: 48px;
+            width: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Aplica o efeito de blur ao fundo */
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.2);
+            -webkit-backdrop-filter: blur(10px);
+
+            a {
+                cursor: pointer;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                /* Aplica o efeito de blur ao fundo */
-                backdrop-filter: blur(10px);
-                background: rgba(0, 0, 0, 0.2);
-                -webkit-backdrop-filter: blur(10px);
 
-                a {
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    img {
-                        width: 21px;
-                        aspect-ratio: auto;
-                        object-fit: cover;
-                    }
+                img {
+                    width: 21px;
+                    aspect-ratio: auto;
+                    object-fit: cover;
                 }
-
             }
+
+        }
+
         /* } */
     }
 }
@@ -142,11 +138,9 @@
 
 
 
-@media (max-width: 1400px){
-    
-}
+@media (max-width: 1400px) {}
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
     .brand-logo {
         padding: 20px;
@@ -160,7 +154,7 @@
     }
 
     .header-content {
-        .background-section {    
+        .background-section {
             video {
                 object-position: 40% center;
             }

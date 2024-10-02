@@ -21,18 +21,16 @@
 }
 
 html {
-    overflow-x: hidden !important;
 
     scroll-behavior: smooth;
-    scrollbar-width: auto;
-    /* largura da scrollbar: auto ou thin */
+    scrollbar-width: thin;
     scrollbar-color: #fff #000;
 }
 
 body {
     width: 100%;
     min-height: 100vh;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: var(--preto);
 }
 

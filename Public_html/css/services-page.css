@@ -1,8 +1,8 @@
 @import url('variables.css');
 
 .services-page {
-    scroll-margin-top: calc(var(--h-header) + 7.5em);
-    height: 100vh;
+    scroll-margin-top: calc(var(--h-header) + -3em);
+    height: 120vh;
     /* background: linear-gradient(to top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%); */
     background-color: var(--preto);
     z-index: -10;
