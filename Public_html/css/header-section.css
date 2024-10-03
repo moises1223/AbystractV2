@@ -138,11 +138,14 @@
 
 
 
-@media (max-width: 1400px) {}
+@media (min-width: 769px) and (max-width: 1400px) {
+   
+}
 
 @media (max-width: 768px) {
 
     .brand-logo {
+        display: none;
         padding: 20px;
 
         a {
