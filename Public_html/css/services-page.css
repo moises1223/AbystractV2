@@ -57,7 +57,7 @@
     }
 
     .services-page-content {
-        
+
         display: flex;
         flex-direction: column;
         top: 80px;
@@ -96,21 +96,25 @@
                 }
             }
         }
-        
+
     }
-   
+
 
 }
 
-@media (min-width: 769px) and (max-width: 1024){
-     
+@media (min-width: 769px) and (max-width: 1440px) {
+
+    .services-page {
+        height:160vh ;
+    }
 }
- 
-@media screen and (orientation: landscape)  and (max-width: 1024px){
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
     .services-page {
         height: 260vh;
     }
-    .services-page-content{
+
+    .services-page-content {
         top: 80px;
     }
 }

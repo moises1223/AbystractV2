@@ -53,6 +53,7 @@
         justify-content: space-between;
         align-items: center;
         width: 100%;
+
         .sentence {
             .title {
                 h2 {
@@ -201,8 +202,13 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1200px){
-    
+@media  (min-width: 769px) and (max-width: 1440px) {
+    .footer{
+        height: 60vh;
+    }
+    .inner-content{
+        margin: 0 10px;
+    }
 }
 
 @media screen and (orientation: landscape)  and (max-width: 1024px){

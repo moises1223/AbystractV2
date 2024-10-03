@@ -237,15 +237,16 @@
                 p {
                     font-size: 12px;
                     font-weight: 300;
-
                 }
             }
         }
     }
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    
+@media (min-width: 769px) and (max-width: 1440px){
+    .about-page{
+        height: 180vh;
+    }
 }
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
