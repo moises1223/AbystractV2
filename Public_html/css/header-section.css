@@ -21,8 +21,8 @@
             align-items: center;
 
             img {
-                height: 86px;
-                width: 86px;
+                height: auto;
+                width: 4vw;
                 aspect-ratio: auto;
                 object-fit: cover;
             }
