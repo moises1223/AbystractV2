@@ -15,7 +15,7 @@
 
 
 .bento-grid-container {
-    padding: 60px 180px;
+    padding: 60px 100px;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.2);
     position: relative;
@@ -157,7 +157,7 @@
     grid-column: span 6;
 }
 
-@media(max-width: 1400px){
+@media (max-width: 768px){
     .bento-grid-container {
         padding: 60px 20px;
     }

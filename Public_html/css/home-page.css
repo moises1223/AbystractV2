@@ -2,12 +2,16 @@
 
 .home-page {
     position: absolute;
-
-    top: 340px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    width: 70%;
+    
 }
 
-.home-page-content {
-    width: 40%;
+.home-page-content {    
+    width: 100%;
 
     h1 {
         color: var(--branco);
@@ -101,12 +105,14 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
 
-   
+   .home-page{
+    width: 100%;
+   }
  
     .home-page-content {
-        width: 100%;
+        
     
         h1 {
     
@@ -135,21 +141,17 @@
         }
     }
 }
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .home-page {
-        position: absolute;
-        top: 30px;
+        width: 70%;
     }
     
     .home-page-content {
-        position: absolute;
-        top: 300px;
-        width: 100%;
-    
+        
         h1 {
     
             font-weight: 600;
-            font-size: 25px;
+            font-size: 60px;
             margin-bottom: 3rem;
         }
    

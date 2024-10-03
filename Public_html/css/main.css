@@ -18,6 +18,7 @@
     text-decoration: none;
     box-sizing: border-box;
     border-style: none;
+
 }
 
 html {
@@ -61,9 +62,9 @@ section {
     .container {
         margin: 0 auto;
         /* Centraliza o conteúdo */
-        padding: 0 5px;
+        padding: 0 10px;
         /* Espaçamento nas laterais */
-        max-width: calc(100% - 40px);
+        max-width: calc(100% - 30px);
     }
 }
 
