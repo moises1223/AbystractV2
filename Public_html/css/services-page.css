@@ -111,7 +111,7 @@
 
 @media screen and (orientation: landscape) and (max-width: 1024px) {
     .services-page {
-        height: 140vh;
+        height: 280vh;
     }
 
     .services-page-content {

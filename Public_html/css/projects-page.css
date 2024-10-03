@@ -203,7 +203,7 @@
 @media screen and (orientation: landscape) and (max-width: 1024px) {
 
     .projects-page {
-        height: 200vh;
+        height: 450vh;
     }
 
     .bento-grid-container {

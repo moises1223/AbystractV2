@@ -251,8 +251,7 @@
 
 @media screen and (orientation: landscape)  {
     .about-page {
-        /* height: 250vh; */
-        height: 140vh;
+        height: 250vh;
     }
 
     .about-page-content {
