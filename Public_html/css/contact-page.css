@@ -146,7 +146,7 @@
 @media screen and (orientation: landscape)and (max-width: 1024px) {
 
     .contact-page{
-        height: 190vh;
+        height: 100vh;
     }
 
     .contact-page-text{

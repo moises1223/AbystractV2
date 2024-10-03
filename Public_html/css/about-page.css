@@ -249,13 +249,14 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1024px) {
+@media screen and (orientation: landscape)  {
     .about-page {
-        height: 250vh;
+        /* height: 250vh; */
+        height: 140vh;
     }
 
     .about-page-content {
-        top: 100px;
+        
 
         .block1 {
             .title {
