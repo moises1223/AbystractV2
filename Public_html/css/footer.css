@@ -9,7 +9,7 @@
 }
 
 .footer-content {
-    
+
     .sentence {
         text-align: center;
         margin-bottom: 4rem;
@@ -38,60 +38,58 @@
         }
     }
 
-    .line {
+    .block-inner {
 
-        padding: 0px 150px;
-        margin-bottom: 4rem;
+        .line {
 
-        .line-inner {
-            border: 1px solid var(--branco);
-        }
-    }
+            padding: 0px 150px;
+            margin-bottom: 4rem;
 
-    .inner-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-
-        .sentence {
-            .title {
-                h2 {
-                    color: var(--branco);
-                }
+            .line-inner {
+                border: 1px solid var(--branco);
             }
+        }
 
-            .subtitle {
+
+
+
+        .inner-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            
+
+
+            .copyrighs {
                 p {
                     color: var(--branco);
                 }
             }
-        }
 
-        .copyrighs {
-            p {
-                color: var(--branco);
+            .brand-logo-inner {
+                text-align: center;
+
+                img {
+                    height: 70px;
+                }
             }
-        }
 
-        .brand-logo-inner {
-            text-align: center;
-            img {
-                height: 70px;
-            }
-        }
+            .links-inner {
+                .nav-items {
+                    display: flex;
+                    gap: 1rem;
 
-        .links-inner {
-            .nav-items {
-                display: flex;
-                gap: 1rem;
-                .item {
-                    a {
-                        color: var(--branco);
+                    .item {
+                        a {
+                            color: var(--branco);
+                        }
                     }
                 }
             }
         }
+
     }
 }
 
@@ -100,7 +98,7 @@
     .footer {
         height: 60vh;
         z-index: 0;
-        
+
     }
 
     .footer-content {
@@ -149,14 +147,15 @@
             flex-direction: column;
             align-items: center;
             padding: 0px 10px;
-           
-            .links-inner{
-                .nav-items{
+
+            .links-inner {
+                .nav-items {
                     flex-direction: column;
                     align-items: center;
                 }
             }
-            .sentence {
+
+            /* .sentence {
                 .title {
                     h2 {
                         color: var(--branco);
@@ -171,7 +170,7 @@
 
                     }
                 }
-            }
+            } */
 
             .copyrighs {
                 margin-bottom: 2rem;
@@ -193,6 +192,7 @@
             .links-inner {
                 padding: 0px 10px;
                 margin-bottom: 2rem;
+
                 .nav-items {
                     display: flex;
                     gap: 1rem;
@@ -202,38 +202,40 @@
     }
 }
 
-@media  (min-width: 769px) and (max-width: 1440px) {
-    .footer{
+@media (min-width: 769px) and (max-width: 1440px) {
+    .footer {
         height: 60vh;
     }
-    .inner-content{
+
+    .inner-content {
         margin: 0 10px;
     }
 }
 
-@media screen and (orientation: landscape)  and (max-width: 1024px){
-    .footer-content{
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    .footer-content {
 
         .sentence {
-           
-    
+
+
             .title {
-              
-    
+
+
                 h2 {
-                  
+
                     font-size: 30px;
-                    
+
                 }
             }
         }
+
         .inner-content {
             display: flex;
             flex-direction: column;
             align-items: center;
             padding: 0px 10px;
 
-            
+
 
             .copyrighs {
                 margin-bottom: 2rem;
@@ -249,9 +251,10 @@
             }
 
             .links-inner {
-               
+
                 margin-bottom: 2rem;
-                padding: 40px ;
+                padding: 40px;
+
                 .nav-items {
                     display: flex;
                     gap: 1rem;

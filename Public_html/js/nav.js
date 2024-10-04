@@ -13,11 +13,11 @@ const createNav = () =>{
                 <nav class="nav-bar">
 
                     <ul class="nav-items">
-                        <li class="item"> <a class="link-item" href="#inicio"> Início</a></li>
-                        <li class="item"> <a class="link-item" href="#sobre"> Sobre </a></li>
-                        <li class="item"> <a class="link-item" href="#servicos"> Serviços </a></li>
-                        <li class="item"> <a class="link-item" href="#projetos"> Projetos </a></li>
-                        <li class="item"> <a class="link-item" href="#contato"> Contato </a></li>
+                        <li class="item"> <a class="link-item" href="/Public_html/#inicio"> Início</a></li>
+                        <li class="item"> <a class="link-item" href="/Public_html/#sobre"> Sobre </a></li>
+                        <li class="item"> <a class="link-item" href="/Public_html/#servicos"> Serviços </a></li>
+                        <li class="item"> <a class="link-item" href="/Public_html/#projetos"> Projetos </a></li>
+                        <li class="item"> <a class="link-item" href="/Public_html/#contato"> Contato </a></li>
                     </ul>
                     
 
