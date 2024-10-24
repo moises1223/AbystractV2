@@ -41,9 +41,12 @@ section {
     width: 100%;
     height: 100vh;
 }
+
 .container {
     margin: 0 220px;
 }
+
+/* recursos efeitos visuais */
 
 .leftToRight {
     opacity: 0;
@@ -58,6 +61,7 @@ section {
     transform: translateY(0);
 }
 
+/* end */
 
 @media (max-width: 768px) {
     .container {
@@ -68,6 +72,8 @@ section {
         max-width: calc(100% - 30px);
     }
 }
+
+
 @media (min-width: 769px) and (max-width: 1440px){
     .container {
         margin: 0 auto;
