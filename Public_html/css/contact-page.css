@@ -3,8 +3,9 @@
 .contact-page {
     scroll-margin-top: calc(var(--h-header) + 4em);
     position: relative;
-   
-    height: 75vh;
+
+    height: 100%;
+    margin-bottom: 20rem;
     background-color: var(--preto);
 }
 
@@ -107,26 +108,30 @@
     }
 }
 
+/*      *     Responsividade     Celular         */
+
 @media (max-width: 768px) {
-    .contact-page{
-        height: 140vh;
+    .contact-page {
     }
-    .contact-page-text{
+    .contact-page-text {
         width: 100%;
         text-align: center;
         margin-bottom: 3rem;
-        .title{
-            h2{
+
+        .title {
+            h2 {
 
                 font-size: 32px;
             }
         }
     }
+
     .contact-page-content {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
+
     .contact-page-forms {
         width: 100%;
     }
@@ -135,26 +140,59 @@
 
 }
 
-@media  (min-width: 769px) and (max-width: 1440px) {
-
-    .contact-page{
-        height: 100vh;
-    }
-    
-}
+/*       *    Responsividade     Landscape Celular         */
 
 @media screen and (orientation: landscape)and (max-width: 1024px) {
 
-    .contact-page{
+    .contact-page {
         height: 200vh;
     }
 
-    .contact-page-text{
-        .title{
-            h2{
+    .contact-page-text {
+        .title {
+            h2 {
 
                 font-size: 42px;
             }
         }
+    }
+}
+
+/*       *    Responsividade     Tablet         */
+
+@media (min-width: 768px) and (max-width: 1440px) {
+
+    .contact-page {
+        /* height: 100vh;*/
+        margin-bottom: 25rem;
+    }
+
+    .contact-page-content {
+        gap: 2rem;
+    }
+
+    .contact-page-text {
+
+
+        .title {
+
+            h2 {
+
+                font-size: 50px;
+            }
+        }
+    }
+
+}
+
+/*      *     Responsividade     Tablet Landscape         */
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1200px) {}
+
+/*      *     Responsividade     Notebook         */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .contact-page {
+        margin-bottom: 25rem;
     }
 }

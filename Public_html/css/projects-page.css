@@ -9,8 +9,8 @@
     scroll-margin-top: calc(var(--h-header) + -1em);
     position: relative;
     background-color: var(--preto);
-
-    height: 120vh;
+    height: 100%;
+    padding-bottom: 15rem;
 }
 
 
@@ -134,8 +134,6 @@
     }
 }
 
-
-
 /* Larguras personalizadas */
 .width-2 {
     grid-column: span 2;
@@ -157,15 +155,13 @@
     grid-column: span 6;
 }
 
-@media (max-width: 768px){
-    .bento-grid-container {
-        padding: 60px 20px;
-    }
-}
+
+/*      *     Responsividade     Celular         */
 
 @media (max-width: 768px) {
     .projects-page {
-        height: 225vh;
+        /* height: 225vh; */
+        padding-bottom: 10rem;
     }
 
     .bento-grid-container {
@@ -200,41 +196,40 @@
     }
 }
 
-@media screen and (orientation: landscape) and (max-width: 1024px) {
+/*       *    Responsividade     Landscape Celular      */
 
+@media screen and (orientation: landscape) and (max-width: 768px) {
+
+}
+
+/*       *    Responsividade     Tablet         */
+
+@media (min-width: 768px) and (max-width: 1440px) {
     .projects-page {
-        height: 450vh;
+        padding-bottom: 10rem;
+    }
+    .bento-grid-container {
+        padding: 50px 20px;
+    }
+
+}
+
+/*      *     Responsividade     Tablet Landscape         */
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1200px) {}
+
+/*      *     Responsividade     Notebook         */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .projects-page {
+        padding-bottom: 10rem;
     }
 
     .bento-grid-container {
-        padding: 50px 150px;
-
         .title {
             h1 {
-
-                font-size: 25px;
+                font-size: 30px;
             }
         }
     }
-
-    .bento-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .bento-item,
-    .bento-item.large,
-    .width-2,
-    .width-3,
-    .width-4,
-    .width-5,
-    .width-6 {
-        grid-column: 1 / -1;
-        /* Ocupa toda a largura em telas menores */
-        grid-row: auto;
-    }
-
-    .bento-item.large .img-container {
-        min-height: 160px;
-    }
-
 }

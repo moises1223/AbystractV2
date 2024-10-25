@@ -59,7 +59,7 @@
             align-items: center;
             width: 100%;
 
-            
+
 
 
             .copyrighs {
@@ -92,6 +92,8 @@
 
     }
 }
+
+/*      *     Responsividade     Celular         */
 
 @media (max-width: 768px) {
 
@@ -148,30 +150,6 @@
             align-items: center;
             padding: 0px 10px;
 
-            .links-inner {
-                .nav-items {
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-
-            /* .sentence {
-                .title {
-                    h2 {
-                        color: var(--branco);
-                    }
-                }
-
-                .subtitle {
-                    p {
-
-                        color: var(--branco);
-
-
-                    }
-                }
-            } */
-
             .copyrighs {
                 margin-bottom: 2rem;
 
@@ -196,23 +174,17 @@
                 .nav-items {
                     display: flex;
                     gap: 1rem;
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
         }
     }
 }
 
-@media (min-width: 769px) and (max-width: 1440px) {
-    .footer {
-        height: 60vh;
-    }
+/*      *     Responsividade     Landscape Celular         */
 
-    .inner-content {
-        margin: 0 10px;
-    }
-}
-
-@media screen and (orientation: landscape) and (max-width: 1024px) {
+@media screen and (orientation: landscape) and (max-width: 768px) {
     .footer-content {
 
         .sentence {
@@ -259,6 +231,79 @@
                     display: flex;
                     gap: 1rem;
                 }
+            }
+        }
+    }
+}
+
+/*     *      Responsividade     Tablet         */
+
+@media (min-width: 768px) and (max-width: 1440px) {
+    .footer {
+        height: 60vh;
+    }
+
+    .inner-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 10px;
+
+        .copyrighs {
+            margin-bottom: 2rem;
+
+            p {
+                color: var(--branco);
+            }
+        }
+
+        .brand-logo-inner {
+            margin-bottom: 2rem;
+
+            img {
+
+                height: 40px;
+            }
+        }
+
+        .links-inner {
+            padding: 0px 10px;
+            margin-bottom: 2rem;
+
+            .nav-items {
+                display: flex;
+                gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}
+
+/*     *      Responsividade     Landscape Tablet         */
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1200px) {}
+
+/*      *     Resposividade      Notebook         */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+
+    .inner-content {
+        .copyrighs {
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .brand-logo-inner {
+            img {
+                height: 30px;
+            }
+        }
+
+        .links-inner {
+            .nav-items {
+                font-size: 12px;
             }
         }
     }

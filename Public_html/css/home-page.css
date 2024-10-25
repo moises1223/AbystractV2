@@ -9,7 +9,7 @@
     width: 70%;
 }
 
-.home-page-content {    
+.home-page-content {
     width: 100%;
 
     h1 {
@@ -19,7 +19,7 @@
         margin-bottom: 2rem;
 
         span {
-        
+
             font-weight: 800;
             color: var(--preto);
         }
@@ -27,15 +27,15 @@
 
 
     .buttons {
-        
+
         display: flex;
         width: 100%;
         gap: 1rem;
         flex-wrap: wrap;
-        
+
         a {
             cursor: pointer;
-            
+
             .btn-budge {
                 display: inline-flex;
                 align-items: center;
@@ -51,19 +51,19 @@
                 transition: transform 0.5s, background-color 0.5s, color 0.5s, width 0.5s ease;
                 white-space: nowrap;
                 overflow: hidden;
-                
+
                 &:hover {
                     color: var(--preto);
                     background-color: var(--branco);
                     transform: scale(1.05);
-                    
+
                     .arrow {
                         max-width: 30px;
                         opacity: 1;
                         margin-left: 10px;
                     }
                 }
-                
+
                 .arrow {
                     display: inline-flex;
                     align-items: center;
@@ -74,12 +74,13 @@
                     transform: rotate(-45deg);
                     transition: max-width 0.5s ease, opacity 0.5s, margin-left 0.5s;
                 }
-                
+
                 span {
                     /* Texto do botão */
                 }
             }
         }
+
         .btn-contact {
             cursor: pointer;
             padding: 0px 40px;
@@ -103,94 +104,130 @@
     }
 }
 
-@media (max-width: 768px){
+/*      *     Responsividade     Celular         */
 
-   .home-page{
-    width: 100%;
-   }
- 
+@media (max-width: 768px) {
+
+    .home-page {
+        width: 100%;
+    }
+
     .home-page-content {
-        
-    
+
+
         h1 {
-    
+
             font-weight: 600;
             font-size: 30px;
             margin-bottom: 3rem;
         }
-   
-    
+
+
         .buttons {
             display: flex;
             width: 100%;
             gap: 1rem;
-            .btn-budge{
-                
-                .button-text{
+
+            .btn-budge {
+
+                .button-text {
 
                     font-size: 12px;
                 }
             }
-            
+
             .btn-contact {
-                
+
                 font-size: 12px;
             }
         }
     }
 }
-@media (min-width: 769px) and (max-width: 1024px) {
-    .home-page {
-        width: 70%;
-    }
-    
-    .home-page-content {
-        
-        h1 {
-    
-            font-weight: 600;
-            font-size: 60px;
-            margin-bottom: 3rem;
-        }
-   
-    
-        .buttons {
-            display: flex;
-            width: 100%;
-            gap: 1rem;
-            .btn-budge{
-                
-                .button-text{
 
-                    font-size: 12px;
-                }
-            }
-            
-            .btn-contact {
-                
-                font-size: 12px;
-            }
-        }
-    }
-}
-@media screen and (orientation: landscape) and (max-width: 1024px){
+/*       *    Responsividade     Landscape Celular         */
+
+@media screen and (orientation: landscape) and (max-width: 1024px) {
 
     .home-page-content {
         top: 120px;
+
         h1 {
             font-size: 20px;
         }
+
         .buttons {
-            .btn-budge{
-                .button-text{
+            .btn-budge {
+                .button-text {
 
                     font-size: 10px;
                 }
             }
+
             .btn-contact {
-                
+
                 font-size: 10px;
             }
         }
     }
+}
+
+/*     *      Responsividade     Tablet         */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .home-page {
+        width: 70%;
+    }
+
+    .home-page-content {
+
+        h1 {
+
+            font-weight: 600;
+            font-size: 60px;
+            margin-bottom: 3rem;
+        }
+
+
+        .buttons {
+            display: flex;
+            width: 100%;
+            gap: 1rem;
+
+            .btn-budge {
+
+                .button-text {
+
+                    font-size: 12px;
+                }
+            }
+
+            .btn-contact {
+
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+/*     *      Responsividade     Landscape Tablet         */
+
+@media screen and (orientation: landscape) and (min-width: 768px) and (max-width: 1200px) {}
+
+/*      *     Resposividade   notebook         */
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .home-page {
+        height: 100%;
+    }
+
+    .home-page-content {
+
+        h1 {
+
+            font-weight: 600;
+            font-size: 30px;
+            margin-bottom: 3rem;
+        }
+    }
+
 }
