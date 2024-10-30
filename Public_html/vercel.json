@@ -1,0 +1,5 @@
+{
+    "routes": [
+      { "src": "/(.*)", "dest": "/not_found.html", "status": 404 }
+    ]
+  }
