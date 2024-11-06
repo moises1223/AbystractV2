@@ -324,14 +324,14 @@
                         <form class="form" action="https://formspree.io/f/xpwaglrg" method="POST">
 
                             <div class="block">
-                                <input class="form-name" type="text" name="nome" id="" placeholder="Seu nome">
-                                <input class="form-numero" type="tel" maxlength="15" onkeyup="handlePhone(event)"
+                                <input required class="form-name" type="text" name="nome" id="" placeholder="Seu nome">
+                                <input required class="form-numero" type="tel" maxlength="15" onkeyup="handlePhone(event)"
                                     placeholder="Número">
                             </div>
 
-                            <input class="form-email" type="email" name="email" id="" placeholder="Seu Email">
+                            <input required class="form-email" type="email" name="email" id="" placeholder="Seu Email">
 
-                            <textarea class="form-message" name="mensagem" id="mensagem"
+                            <textarea required class="form-message" name="mensagem" id="mensagem"
                                 placeholder="Nos fale sobre seu problema"></textarea>
 
                             <button class="enviar" type="submit">Solicitar Contato</button>
