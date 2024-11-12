@@ -4,9 +4,9 @@
       "handle": "filesystem"
     },
     {
-      "src": "/(.*)",
-      "dest": "/not_found.html",
-      "status": 404
+      "src": "^/(.*)$",
+      "status": 404,
+      "dest": "/not_found.html"
     }
   ]
 }
