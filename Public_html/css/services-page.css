@@ -2,12 +2,12 @@
 
 .services-page {
     scroll-margin-top: calc(var(--h-header) + -3em);
-    /* background: linear-gradient(to top, rgba(0, 0, 0, 1) 60%, rgba(0, 0, 0, 0) 100%); */
+    background: radial-gradient(ellipse 50% 95% at top, #501d68e1, #000);
     background-color: var(--preto);
     /* height: 130vh; */
     height: 100%;
     margin-bottom: 25rem;
-    z-index: -10;
+
 }
 
 .services-page-content {

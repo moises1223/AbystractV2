@@ -3,7 +3,7 @@
 .about-page {
     scroll-margin-top: calc(var(--h-header) + -9rem);
     background-color: var(--preto);
-    background: radial-gradient(ellipse 60% 45% at center, #501d68e1, #000);
+    
     height: 100%;
     margin-bottom: 30rem;
     z-index: 10;
@@ -14,6 +14,7 @@
 }
 
 .about-page-content {
+    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,6 +23,7 @@
 
     .block1 {
         position: relative;
+        
 
         width: 70%;
 
@@ -76,6 +78,7 @@
     }
 
     .block2 {
+        
         text-align: center;
         position: relative;
 
@@ -111,8 +114,9 @@
 
 
     }
-
+    
     .statistics-panel {
+        
 
         position: relative;
         top: 300px;
@@ -128,6 +132,8 @@
         color: var(--branco);
 
         .statistics {
+            
+
 
             text-align: center;
             display: flex;
